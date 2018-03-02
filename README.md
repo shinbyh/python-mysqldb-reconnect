@@ -1,5 +1,7 @@
 # python-mysqldb-reconnect
-A minimal MySQL database management with auto-reconnection after session timeout
+A minimal MySQL database management with auto-reconnection after session timeout.
+
+Because MySQL shuts down a connection after a certain timeout, a long-running Python code with a mysql connection must be renewed. I create a wrapper class for pymysql which automatically re-connects to the mysql database when an exception occurs due to timeout (e.g. an error message with "MySQL has gone away").
 
 ## Prerequisites
 * Python 2.X or 3.X
