@@ -2,7 +2,9 @@
 A minimal MySQL database management with auto-reconnection after session timeout
 
 ## Prerequisites
+* Python 2.X or 3.X
 * pymysql
+* MySQL or a server running MySQL
 
 ## Usage
 Running the test code
@@ -10,6 +12,7 @@ Running the test code
 $ python mysqldb.py
 ```
 
+Sample code
 ```
 import mysqldb
 
